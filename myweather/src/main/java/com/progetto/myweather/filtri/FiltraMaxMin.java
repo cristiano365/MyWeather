@@ -35,7 +35,7 @@ public class FiltraMaxMin {
 		if (singolaCitta == true) {
 			for (Citta o : citta) {
 				if (o instanceof CittaMeteoData) {
-					castData.add((CittaMeteoData)o);
+					castData.add((CittaMeteoData)o); //downcast
 				}
 				
 			}
@@ -53,7 +53,7 @@ public class FiltraMaxMin {
 		else if (singolaCitta == false) {
 				for (Citta o : citta) {
 			    	if (o instanceof CittaMeteo) {
-			    		castCitta.add((CittaMeteo) o);
+			    		castCitta.add((CittaMeteo) o); //downcast
 			    	}
 			    }
 				double temp_max= castCitta.get(0).getTemp_max();

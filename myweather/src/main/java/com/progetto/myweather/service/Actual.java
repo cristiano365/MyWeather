@@ -1,4 +1,4 @@
-package com.progetto.myweather.service;
+	package com.progetto.myweather.service;
 
 import com.progetto.myweather.exception.CustomException;
 import com.progetto.myweather.model.*;
@@ -36,11 +36,12 @@ public class Actual implements RequestApi{
 	}
 	
 	
+	//OVERLOADING (DUE METODI CON STESSA FIRMA, MA DATI DIVERSI)
+	
 	
 	
 	/*
 	 * metodo che restituisce le citta presenti nel box scelto dall'utente
-	 * @override
 	 * @param lon-lef
 	 * @param lat-bottom
 	 * @param lon-right

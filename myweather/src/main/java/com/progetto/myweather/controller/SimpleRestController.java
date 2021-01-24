@@ -91,7 +91,7 @@ public class SimpleRestController {
 	
 	@GetMapping (value = "/archivioBox")
 	public Vector<Citta> filtroBoxPeriodo(@RequestParam(name="periodo", defaultValue="1")int periodo,
-											@RequestParam(name="box",defaultValue="box1")String box) throws ParseException, CustomException{
+											@RequestParam(name="box",defaultValue="	")String box) throws ParseException, CustomException{
 		return filtri.filtraggioBoxPeriodo(box, periodo);
 	}
 	

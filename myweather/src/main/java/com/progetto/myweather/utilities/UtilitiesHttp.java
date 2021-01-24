@@ -12,7 +12,7 @@ public class UtilitiesHttp {
 	 * @return ApiKey
 	 */
 	public String getKey () {
-		File file_key = new File ("C:\\Users\\MR911\\git\\ProgettoPO\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\api-key.txt");
+		File file_key = new File ("C:\\Users\\Sony\\Desktop\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\api-key.txt");
 		String key="";
 		try {
 			BufferedReader buf = new BufferedReader(new FileReader (file_key));

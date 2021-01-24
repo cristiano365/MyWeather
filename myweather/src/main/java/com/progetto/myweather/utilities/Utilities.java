@@ -16,9 +16,9 @@ import com.progetto.myweather.model.CittaMeteo;
 
 public class Utilities {
 	
-	String docuMax = "C:\\Users\\MR911\\git\\ProgettoPO\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\cittaBoxMax.txt";
-	String docuMid = "C:\\Users\\MR911\\git\\ProgettoPO\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\cittaBoxMedium.txt";
-	String docuMin = "C:\\Users\\MR911\\git\\ProgettoPO\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\cittaBoxMin.txt";
+	String docuMax = "C:\\Users\\Sony\\Desktop\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\cittaBoxMax.txt";
+	String docuMid = "C:\\Users\\Sony\\Desktop\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\cittaBoxMedium.txt";
+	String docuMin = "C:\\Users\\Sony\\Desktop\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\cittaBoxMin.txt";
 	
 	/*
 	 * metodo che restituisce i nomi delle citta corrispondenti al box richiesto dall'utente
@@ -61,7 +61,7 @@ public class Utilities {
 	public Vector <Citta> calcoloPeriodo(int periodo, boolean singolaCitta) throws IOException, ParseException {
 		JSONParser parserjson = new JSONParser();
 		JSONObject obj = new JSONObject();
-		File path = new File ("C:\\Users\\MR911\\git\\ProgettoPO\\myweather\\src\\main\\resources\\Archivio");
+		File path = new File ("C:\\Users\\Sony\\Desktop\\myweather\\src\\main\\resources\\Archivio");
 		String[] files = path.list();
 	    Vector <Citta> citta = new Vector <Citta>();
 		
@@ -163,7 +163,7 @@ public class Utilities {
 		
 		public Vector<String> getHome()  {
 			
-			String homeFile="C:\\Users\\MR911\\git\\ProgettoPO\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\home.txt";
+			String homeFile="C:\\Users\\Sony\\Desktop\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\home.txt";
 			Vector<String> home= new Vector<String>();    
 			
 			

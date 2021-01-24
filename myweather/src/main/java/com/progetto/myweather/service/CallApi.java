@@ -36,7 +36,7 @@ public class CallApi {
 		 * @return vector con le temperature attuali delle citta relative al box
 		 */
 		public Vector<Citta> ApiCall(String box) throws CustomException{
-			String FileBox ="C:\\Users\\MR911\\git\\ProgettoPO\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\FileBox.txt";
+			String FileBox ="C:\\Users\\Sony\\Desktop\\myweather\\src\\main\\resources\\Archivio\\cittaBox\\FileBox.txt";
 			Vector<String> boxStringhe = utilitiesHttp.elaboraStringheBox(FileBox);
 			switch(box) {
 			case "box1" :  break;
@@ -56,8 +56,8 @@ public class CallApi {
 				URLConnection openConnection = new URL(site1+box_selezionato+site2+utilitiesHttp.getKey()).openConnection();
 				InputStream input = openConnection.getInputStream();
 				BufferedReader buf = new BufferedReader(new InputStreamReader (input));
-				obj = (JSONObject) parser.parse(buf); 
-				citta = utilities.parser(obj,false);
+				obj = (JSONObject) parser.parse(buf); // METODO .PARSE() PER LEGGERE UN JSON PRESENTE IN UNA STRINGA
+				citta = utilities.parser(obj,false);  //parsing del JSONObject
 				citta = evidenziaStatistiche(citta);
 				citta = varianza.aggiungiVarianza(citta,false);
 				buf.close();

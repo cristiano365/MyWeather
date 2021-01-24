@@ -18,6 +18,7 @@ public class CittaMeteo extends Citta{
 		
 	}
 	public CittaMeteo(CittaMeteo o) {
+		
 		super(o.name);
 		this.temp_max=o.temp_max;
 		this.temp_min=o.temp_min;
